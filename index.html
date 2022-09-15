@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Image classification using MobileNet and p5.js</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+</head>
+
+<body>
+    <a href="index.html">
+        <h1>Image classification using Tensor Flow </h1>
+    </a>
+
+  <div class="container">
+    <div class="outer">
+      <div id="div_upload" onchange="uploadImage()">
+        <input type="file" name="" id="imageUploaded">
+        Upload File
+      </div>
+    </div>
+    <div id="bildeKontainer"></div>
+    <div class="result">
+      <span id="classified_item"></span>
+      <br>
+      <span id="classified_confidence"></span>
+    </div>
+  </div>
+</body>
+
+</html>
